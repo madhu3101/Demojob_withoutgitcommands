@@ -3,7 +3,7 @@
     <property environment="env"/>
   
   <target name="Deploy">
-<echo message = "${Sf.username}" />  
+<echo message = "${Sf1.username}" />  
   <sf:deploy
             username="${Sf1.username}"
             password="${Sf1.password}"
