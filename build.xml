@@ -7,7 +7,7 @@
   <sf:deploy
             username="${Sf1.username}"
             password="${Sf1.password}"
-            serverurl="${sfSandbox.serverurl}"
+            serverurl="${sf.serverurl}"
             deployRoot="codepkg"
             testLevel="RunSpecifiedTests" rollbackOnError="true" >
 	  <runTest>HelloWorldTest</runTest>
@@ -18,7 +18,7 @@
   <echo message = "${Sf.username}" />
       <sf:retrieve username="${Sf.username}"
                    password="${Sf.password}"
-                   serverurl="${sfSandbox.serverurl}"
+                   serverurl="${sf.serverurl}"
           retrieveTarget="codepkg"
            unpackaged="codepkg/package.xml"/>
     </target>
