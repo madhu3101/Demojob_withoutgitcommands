@@ -8,7 +8,7 @@
             username="${Sandbox2.username}"
             password="${Sandbox2.password}"
             serverurl="${sfSandbox.serverurl}"
-            deployRoot="Demopkg"
+            deployRoot="codepkg"
             testLevel="RunSpecifiedTests" rollbackOnError="true" >
 	  <runTest>HelloWorldTest</runTest>
 	  </sf:deploy>
@@ -19,8 +19,8 @@
       <sf:retrieve username="${Sandbox1.username}"
                    password="${Sandbox1.password}"
                    serverurl="${sfSandbox.serverurl}"
-          retrieveTarget="Demopkg"
-           unpackaged="DemoPkg/package.xml"/>
+          retrieveTarget="codepkg"
+           unpackaged="codepkg/package.xml"/>
     </target>
 	<!-- Git Macro Definitions -->
 	<target name="src-cleanup">
