@@ -3,10 +3,10 @@
     <property environment="env"/>
   
   <target name="Deploy">
-<echo message = "${Sandbox2.username}" />  
+<echo message = "${Sf.username}" />  
   <sf:deploy
-            username="${Sandbox2.username}"
-            password="${Sandbox2.password}"
+            username="${Sf1.username}"
+            password="${Sf1.password}"
             serverurl="${sfSandbox.serverurl}"
             deployRoot="codepkg"
             testLevel="RunSpecifiedTests" rollbackOnError="true" >
@@ -15,9 +15,9 @@
   </target>
   
   <target name="retrieve">
-  <echo message = "${Sandbox1.username}" />
-      <sf:retrieve username="${Sandbox1.username}"
-                   password="${Sandbox1.password}"
+  <echo message = "${Sf.username}" />
+      <sf:retrieve username="${Sf.username}"
+                   password="${Sf.password}"
                    serverurl="${sfSandbox.serverurl}"
           retrieveTarget="codepkg"
            unpackaged="codepkg/package.xml"/>
